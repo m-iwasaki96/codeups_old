@@ -1,0 +1,184 @@
+@use "global" as *;
+
+// 共通パーツ
+main {
+  background-color: $black;
+}
+.inner {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  @include mq(md) {
+    max-width: calc($inner + rem(50));
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+.section-title {
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: lh(29, 20);
+  letter-spacing: rem(2);
+  color: $white;
+  @include mq(md) {
+    font-size: rem(30);
+    line-height: lh(35, 30);
+  }
+}
+.section-title--back {
+  font-family: $second-font-family;
+  font-size: rem(50);
+  font-weight: $normal;
+  line-height: lh(72, 50);
+  letter-spacing: rem(2);
+  color: $yellow;
+  opacity: 0.2;
+  text-transform: capitalize;
+  @include mq(md) {
+    font-size: rem(110);
+    line-height: lh(158, 110);
+  }
+}
+.main-title {
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: lh(29, 20);
+  letter-spacing: rem(2);
+  color: $white;
+  @include mq(md) {
+    font-size: rem(25);
+    letter-spacing: rem(0.5);
+  }
+}
+.text {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: lh(23, 16);
+  letter-spacing: rem(2);
+  color: $white;
+  @include mq(md) {
+    line-height: lh(35, 16);
+    letter-spacing: rem(0.5);
+  }
+}
+.button {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.button--link {
+  display: block;
+  width: rem(360);
+  max-width: 100%;
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: lh(29, 20);
+  letter-spacing: rem(2);
+  padding: rem(10);
+  background-color: $gray;
+  color: $white;
+  border: rem(1) solid $white;
+  position: relative;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  &:hover {
+    border: rem(1) solid $gray;
+  }
+  @include mq(md) {
+    margin-left: 0;
+    padding: rem(1);
+  }
+}
+.button--link:hover::before {
+  opacity: 1;
+  transform: translate(0, 0);
+  background-color: $white;
+  color: $black;
+}
+.button--link::before {
+  content: attr(data-hover-button);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  padding: inherit;
+  opacity: 0;
+  transform: translate(-100%, 0);
+  transition: all 0.3s ease-in-out;
+  @include mq(md) {
+    font-size: rem(16);
+    font-weight: $medium;
+    line-height: lh(54, 16);
+    letter-spacing: rem(2);
+  }
+}
+.button--link:hover div {
+  opacity: 0;
+  transform: translate(100%, 0);
+}
+.button--link div {
+  transition: all 0.3s ease-in-out;
+  @include mq(md) {
+    font-size: rem(16);
+    font-weight: $medium;
+    line-height: lh(54, 16);
+    letter-spacing: rem(2);
+  }
+}
+
+.card {
+  width: 100%;
+  background-color: $white;
+  color: $gray;
+}
+.card__img img {
+  aspect-ratio: 335 / 223;
+}
+.card__body {
+  padding: rem(4) rem(24) rem(16);
+  @include mq(md) {
+    padding-left: rem(26);
+  }
+}
+.card__body-title {
+  font-size: rem(18);
+  font-weight: $medium;
+  line-height: lh(35, 18);
+  letter-spacing: rem(1);
+  margin-left: rem(-3);
+}
+.card__body-text {
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: lh(26, 14);
+  letter-spacing: rem(1);
+  margin-top: rem(3);
+  margin-left: rem(-2);
+  @include mq(md) {
+    margin-top: rem(6);
+  }
+}
+.card__body__info {
+  margin-top: rem(6);
+  @include mq(md) {
+    margin-top: 10px;
+  }
+}
+.card__body-label--category {
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: lh(26, 14);
+  letter-spacing: rem(1);
+  color: $black2;
+  background-color: $yellow2;
+  padding-left: rem(4);
+}
+.card__body-label--date {
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: lh(26, 14);
+  letter-spacing: rem(1);
+}

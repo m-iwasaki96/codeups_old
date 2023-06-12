@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.contact {
+  background-color: $gray;
+  padding-top: rem(67);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(150);
+    padding-bottom: rem(146);
+  }
+}
+.contact-title {
+  text-align: center;
+  position: relative;
+  @include mq(md) {
+    padding-left: rem(10);
+  }
+}
+.contact-title::before {
+  content: attr(data-en-contact);
+  position: absolute;
+  top: rem(-50);
+  left: 50%;
+  transform: translateX(-50%);
+  color: $yellow;
+  opacity: 0.2;
+  font-family: $second-font-family;
+  font-size: rem(50);
+  font-weight: $normal;
+  line-height: lh(72, 50);
+  letter-spacing: rem(2);
+  @include mq(md) {
+    font-size: rem(110);
+    top: rem(-91);
+    left: rem(219);
+  }
+}
+.contact__body {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(18);
+  }
+}
+.contact__text {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: lh(23, 16);
+  letter-spacing: rem(2);
+  color: $white;
+  @include mq(md) {
+    text-align: center;
+    padding-top: rem(5);
+    padding-left: rem(10);
+  }
+}
+.contact__button {
+  margin-top: rem(45);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+.contact__button.button {
+  @include mq(md) {
+    padding-left: rem(7);
+  }
+}
+.contact__button--link {
+  @include mq(md) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.contact__button--link.button--link div {
+  @include mq(md) {
+    font-size: rem(20);
+    font-weight: $normal;
+    line-height: lh(29, 20);
+    letter-spacing: rem(2);
+    padding-top: rem(15);
+    padding-bottom: rem(15);
+    padding-right: rem(8);
+  }
+}
