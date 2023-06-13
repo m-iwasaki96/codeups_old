@@ -24,6 +24,13 @@
     top: rem(-65);
   }
 }
+.overview-title__wrapper {
+  @include mq(md) {
+    max-width: calc($inner + rem(50));
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .overview__box {
   position: relative;
   z-index: 10;

@@ -257,6 +257,9 @@ select::-ms-expand {
     letter-spacing: 0.125rem;
   }
 }
+.footer__menu--link:hover {
+  opacity: 1;
+}
 
 .footer__copyright {
   margin-top: 25px;
@@ -295,7 +298,8 @@ select::-ms-expand {
   z-index: 20;
 }
 .pagetop:hover {
-  background-color: #111111;
+  background-color: #333;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) {
   .pagetop {
@@ -316,10 +320,10 @@ select::-ms-expand {
   width: 1.25rem;
   height: 20px;
   height: 1.25rem;
-  border-top: 2px solid #111111;
-  border-top: 0.125rem solid #111111;
-  border-left: 2px solid #111111;
-  border-left: 0.125rem solid #111111;
+  border-top: 2px solid #333;
+  border-top: 0.125rem solid #333;
+  border-left: 2px solid #333;
+  border-left: 0.125rem solid #333;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transition: 0.3s;
@@ -427,6 +431,9 @@ select::-ms-expand {
   height: inherit;
   padding-left: 30px;
   padding-left: 1.875rem;
+}
+.header__link:hover {
+  opacity: 1;
 }
 
 .header__item:not(:last-child):hover {
@@ -911,6 +918,7 @@ main {
 .blog-card.card:hover {
   background-color: #333;
   color: #fff;
+  opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1136,6 +1144,13 @@ main {
 .content-title__wrapper {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .content-title__wrapper {
+    max-width: calc(1100px + 3.125rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .content-title {
   position: relative;
@@ -1298,6 +1313,19 @@ main {
   position: relative;
   width: 100%;
   height: inherit;
+}
+
+.swiper,
+.swiper-slide {
+  height: 100vh;
+}
+
+.swiper-slide > picture,
+.swiper-slide > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .mv__slider,
@@ -1497,7 +1525,7 @@ main {
   .news__button--link.button--link {
     display: inline-block;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.4375;
     width: 8.375rem;
     padding: 0.25rem 0;
@@ -1587,6 +1615,14 @@ main {
     width: 94.6859%;
     height: 75.6875rem;
     top: -4.0625rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overview-title__wrapper {
+    max-width: calc(1100px + 3.125rem);
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1746,6 +1782,14 @@ main {
   padding-top: 3.125rem;
   padding-bottom: 72px;
   padding-bottom: 4.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .works-title__wrapper {
+    max-width: calc(1100px + 3.125rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .works__box {

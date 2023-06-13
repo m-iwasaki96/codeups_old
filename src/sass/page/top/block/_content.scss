@@ -30,6 +30,11 @@
 }
 .content-title__wrapper {
   text-align: center;
+  @include mq(md) {
+    max-width: calc($inner + rem(50));
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .content-title {
   position: relative;

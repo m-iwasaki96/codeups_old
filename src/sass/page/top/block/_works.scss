@@ -6,6 +6,13 @@
   padding-top: rem(50);
   padding-bottom: rem(72);
 }
+.works-title__wrapper {
+  @include mq(md) {
+    max-width: calc($inner + rem(50));
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .works__box {
   position: relative;
   z-index: 10;

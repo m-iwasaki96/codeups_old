@@ -56,6 +56,9 @@
     line-height: lh(35, 16);
     letter-spacing: rem(2);
   }
+  &:hover {
+    opacity: 1;
+  }
 }
 .footer__copyright {
   margin-top: rem(25);
@@ -84,7 +87,8 @@
   transition: 0.3s;
   z-index: 20;
   &:hover {
-    background-color: $black;
+    background-color: $gray;
+    opacity: 1;
   }
   @include mq(md) {
     right: rem(35);
@@ -99,8 +103,8 @@
   left: rem(12);
   width: rem(20);
   height: rem(20);
-  border-top: rem(2) solid $black;
-  border-left: rem(2) solid $black;
+  border-top: rem(2) solid $gray;
+  border-left: rem(2) solid $gray;
   transform: rotate(45deg);
   transition: 0.3s;
 }
