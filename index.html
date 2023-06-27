@@ -30,13 +30,13 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script defer src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header class="header js-header">
       <div class="header__inner">
         <h1 class="header__logo">
-          <img src="./src/images/common/header-logo-sp.png" alt="CodeUpsのロゴ" />
+          <img src="./images/common/header-logo-sp.png" alt="CodeUpsのロゴ" />
         </h1>
         <nav class="header__nav u-desktop">
           <ul class="header__items">
@@ -100,22 +100,22 @@
         <div class="mv__inner">
           <div class="mv__slider swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="mv__swiper-slide swiper-slide">
                 <picture class="slide-img">
-                  <source srcset="./src/images/common/mv-img-sp01.jpg" media="(max-width: 768px)" />
-                  <img src="./src/images/common/mv-img-pc01.jpg" alt="ビルが立ち並ぶ都会の空を見上げるようなイメージ画像" />
+                  <source srcset="./images/common/mv-img-sp01.jpg" media="(max-width: 768px)" />
+                  <img src="./images/common/mv-img-pc01.jpg" alt="ビルが立ち並ぶ都会の空を見上げるようなイメージ画像" />
                 </picture>
               </div>
-              <div class="swiper-slide">
+              <div class="mv__swiper-slide swiper-slide">
                 <picture class="slide-img">
-                  <source srcset="./src/images/common/mv-img-sp02.jpg" media="(max-width: 768px)" />
-                  <img src="./src/images/common/mv-img-pc02.jpg" alt="4つのビルの中央から真上を見上げるように映した画像" />
+                  <source srcset="./images/common/mv-img-sp02.jpg" media="(max-width: 768px)" />
+                  <img src="./images/common/mv-img-pc02.jpg" alt="4つのビルの中央から真上を見上げるように映した画像" />
                 </picture>
               </div>
-              <div class="swiper-slide">
+              <div class="mv__swiper-slide swiper-slide">
                 <picture class="slide-img">
-                  <source srcset="./src/images/common/mv-img-sp03.jpg" media="(max-width: 768px)" />
-                  <img src="./src/images/common/mv-img-pc03.jpg" alt="上空から都会のビル群を撮影したようなイメージ画像" />
+                  <source srcset="./images/common/mv-img-sp03.jpg" media="(max-width: 768px)" />
+                  <img src="./images/common/mv-img-pc03.jpg" alt="上空から都会のビル群を撮影したようなイメージ画像" />
                 </picture>
               </div>
             </div>
@@ -127,22 +127,22 @@
         </div>
       </div>
 
-      <div id="news" class="news">
+      <div class="news">
         <div class="news__inner inner">
-          <ul class="news__contaner">
+          <ul class="news__container">
             <li class="news__item">
-              <div class="news__info">
-                <time class="news__item-date" datetime="2021-07-20">2020.07.20</time>
-                <span class="news__category">お知らせ</span>
+              <div class="news__item-label">
+                <time class="news__item-date">2020.07.20</time>
+                <p class="news-item-category"><span>お知らせ</span></p>
               </div>
-              <div class="news__content">
-                <a href="#" class="news__content--link">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
+              <p class="news__item-title">
+                <a href="" class="news__item-title--link">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
+              </p>
+              <div class="news__button">
+                <a href="" class="news__button--link">すべて見る</a>
               </div>
             </li>
           </ul>
-          <div class="news__button button">
-            <a href="#" class="news__button--link button--link" data-hover-news="すべて見る"><div>すべて見る</div></a>
-          </div>
         </div>
       </div>
 
@@ -178,13 +178,13 @@
               <div class="works__slider swiper2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./src/images/common/works-img01.jpg" alt="画面にホームページが映し出されているiMacの画像" />
+                    <img src="./images/common/works-img01.jpg" alt="画面にホームページが映し出されているiMacの画像" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./src/images/common/works-img02.jpg" alt="開かれた状態のノートパソコンと植物やスマホが白いデスクに置かれている様子" />
+                    <img src="./images/common/works-img02.jpg" alt="開かれた状態のノートパソコンと植物やスマホが白いデスクに置かれている様子" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./src/images/common/works-img03.jpg" alt="開かれた状態のMacBookと水、サボテンなどが茶色のデスクに置かれている様子" />
+                    <img src="./images/common/works-img03.jpg" alt="開かれた状態のMacBookと水、サボテンなどが茶色のデスクに置かれている様子" />
                   </div>
                   <!-- ページネーション -->
                   <div class="swiper-pagination"></div>
@@ -196,7 +196,7 @@
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
                 <div class="works__button button">
-                  <a href="#" class="works__button--link button--link" data-hover-button="詳しく見る"><div>詳しく見る</div></a>
+                  <a href="#" class="works__button--link button--link">詳しく見る</a>
                 </div>
               </div>
             </div>
@@ -212,7 +212,7 @@
           <div class="overview__inner inner">
             <div class="overview__container">
               <div class="overview__img-box">
-                <img src="./src/images/common/overview-img.jpg" alt="オフィスの部屋から通路を映した様子" />
+                <img src="./images/common/overview-img.jpg" alt="オフィスの部屋から通路を映した様子" />
               </div>
               <div class="overview-content__wrapper">
                 <h3 class="overview-content-title main-title">メインタイトルが入ります。</h3>
@@ -236,10 +236,10 @@
           <div class="blog-cards__container">
             <a href="#" class="blog__badge blog-card card">
               <div class="blog-card__img card__img">
-                <img src="./src/images/common/blog-card01.jpg" alt="コードが表示されたPCのイメージ画像" />
+                <img src="./images/common/blog-card01.jpg" alt="コードが表示されたPCのイメージ画像" />
               </div>
               <div class="blog-card__body card__body">
-                <p class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</p>
+                <h3 class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
                 <p class="blog-card__body-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
                 <div class="blog-card__info card__body__info">
                   <span class="card__body-label--category">カテゴリ</span>
@@ -249,10 +249,10 @@
             </a>
             <a href="#" class="blog-card card">
               <div class="blog-card__img card__img">
-                <img src="./src/images/common/blog-card02.jpg" alt="コードが表示されたPCのイメージ画像" />
+                <img src="./images/common/blog-card02.jpg" alt="コードが表示されたPCのイメージ画像" />
               </div>
               <div class="blog-card__body card__body">
-                <p class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</p>
+                <h3 class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
                 <p class="blog-card__body-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
                 <div class="blog-card__info card__body__info">
                   <span class="card__body-label--category">カテゴリ</span>
@@ -262,10 +262,10 @@
             </a>
             <a href="#" class="blog-card card">
               <div class="blog-card__img card__img">
-                <img src="./src/images/common/blog-card03.jpg" alt="コードが表示されたPCのイメージ画像" />
+                <img src="./images/common/blog-card03.jpg" alt="コードが表示されたPCのイメージ画像" />
               </div>
               <div class="blog-card__body card__body">
-                <p class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</p>
+                <h3 class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
                 <p class="blog-card__body-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
                 <div class="blog-card__info card__body__info">
                   <span class="card__body-label--category">カテゴリ</span>
@@ -275,7 +275,7 @@
             </a>
           </div>
           <div class="blog__button button">
-            <a href="#" class="blog__button--link button--link" data-hover-button="詳しく見る"><div>詳しく見る</div></a>
+            <a href="#" class="blog__button--link button--link">詳しく見る</a>
           </div>
         </div>
       </section>
@@ -288,7 +288,7 @@
           <div class="contact__body">
             <div class="contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
             <div class="contact__button button">
-              <a href="#" class="contact__button--link button--link" data-hover-button="詳しく見る"><div>お問い合わせへ</div></a>
+              <a href="#" class="contact__button--link button--link">お問い合わせへ</a>
             </div>
           </div>
         </div>
@@ -299,7 +299,7 @@
       <div class="footer__inner">
         <div class="footer__wrapper">
           <div class="footer__logo">
-            <img src="./src/images/common/header-logo-sp.png" alt="CodeUpsのロゴ" />
+            <img src="./images/common/header-logo-sp.png" alt="CodeUpsのロゴ" />
           </div>
           <ul class="footer__nav">
             <li class="footer__menu">

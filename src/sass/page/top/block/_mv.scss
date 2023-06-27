@@ -9,12 +9,12 @@
   width: 100%;
   height: inherit;
 }
-.swiper,
-.swiper-slide {
+.mv__slider,
+.mv__swiper-slide {
   height: 100vh;
 }
-.swiper-slide > picture,
-.swiper-slide > img {
+.mv__swiper-slide > picture,
+.mv__swiper-slide > img {
   object-fit: cover;
   width: 100%;
   height: 100%;

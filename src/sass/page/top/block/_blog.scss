@@ -40,11 +40,10 @@
 .blog-cards__container {
   margin-top: rem(64);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(335), 1fr));
   row-gap: rem(24);
   column-gap: rem(25);
   @include mq(md) {
-    grid-template-columns: repeat(auto-fit, minmax(rem(350), 1fr));
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
     margin-top: rem(39);
   }

@@ -3,8 +3,11 @@
 .works {
   width: 100%;
   background-color: $black;
-  padding-top: rem(50);
+  padding-top: rem(54);
   padding-bottom: rem(72);
+  @include mq(md) {
+    padding-top: rem(50);
+  }
 }
 .works-title__wrapper {
   @include mq(md) {
@@ -45,7 +48,7 @@
   letter-spacing: rem(2);
   @include mq(md) {
     font-size: rem(110);
-    left: 80%;
+    left: rem(956);
   }
 }
 .works__container {
@@ -82,7 +85,8 @@
     bottom: rem(-31);
   }
 }
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 rem(6);
 }
 .swiper-pagination-bullet-active {
@@ -102,6 +106,7 @@
     width: 46.3%;
     padding-right: 0;
     padding-left: 0;
+    padding-bottom: 0;
   }
 }
 .works-content-title {
@@ -123,7 +128,7 @@
 .works__button {
   margin-top: rem(27);
   @include mq(md) {
-    margin-top: rem(48);
+    margin-top: rem(47);
   }
 }
 .works__button.button {

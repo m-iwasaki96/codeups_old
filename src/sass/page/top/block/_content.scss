@@ -7,7 +7,7 @@
   padding-top: rem(50);
   padding-bottom: rem(69);
   @include mq(md) {
-    padding-top: 89px;
+    padding-top: rem(95);
     padding-bottom: rem(150);
   }
 }
@@ -23,6 +23,7 @@
     width: 94.6859%;
     height: rem(1213);
     top: rem(-24);
+    left: rem(-7);
   }
 }
 .content__inner {
@@ -58,7 +59,7 @@
   @include mq(md) {
     font-size: rem(110);
     top: rem(-43);
-    left: rem(312);
+    left: rem(247);
   }
 }
 .content__container {
@@ -70,35 +71,44 @@
   }
 }
 .content__link:first-child {
-  background: url(../src/images/common/management-philosophy-sp.jpg);
+  background: url(../images/common/management-philosophy-sp.jpg);
   background-size: cover;
   width: 100%;
+  height: auto;
+  object-fit: cover;
   @include mq(md) {
-    background: url(../src/images/common/management-philosophy.jpg);
+    background: url(../images/common/management-philosophy.jpg);
+    background-size: cover;
   }
 }
 .content__link:nth-child(2) {
-  background: url(../src/images/common/philosophy01-sp.jpg);
+  background: url(../images/common/philosophy01-sp.jpg);
   background-size: cover;
   width: 100%;
+  height: auto;
   @include mq(md) {
-    background: url(../src/images/common/philosophy01.jpg);
+    background: url(../images/common/philosophy01.jpg);
+    background-size: cover;
   }
 }
 .content__link:nth-child(3) {
-  background: url(../src/images/common/philosophy02-sp.jpg);
+  background: url(../images/common/philosophy02-sp.jpg);
   background-size: cover;
   width: 100%;
+  height: auto;
   @include mq(md) {
-    background: url(../src/images/common/philosophy02.jpg);
+    background: url(../images/common/philosophy02.jpg);
+    background-size: cover;
   }
 }
 .content__link:nth-child(4) {
-  background: url(../src/images/common/philosophy03-sp.jpg);
+  background: url(../images/common/philosophy03-sp.jpg);
   background-size: cover;
   width: 100%;
+  height: auto;
   @include mq(md) {
-    background: url(../src/images/common/philosophy03.jpg);
+    background: url(../images/common/philosophy03.jpg);
+    background-size: cover;
   }
 }
 .content__link-text {
@@ -107,18 +117,17 @@
   line-height: lh(29, 20);
   letter-spacing: rem(2);
   color: $white;
-  text-align: center;
-  padding-top: rem(70);
-  padding-bottom: rem(70);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   @include mq(md) {
     font-size: rem(25);
     line-height: lh(54, 25);
-    padding-top: rem(133);
-    padding-bottom: rem(133);
-    margin-left: rem(10);
   }
 }
 .content__link {
