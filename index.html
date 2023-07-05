@@ -25,11 +25,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
     <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js" defer></script>
   </head>
   <body>
@@ -41,22 +41,22 @@
         <nav class="header__nav u-desktop">
           <ul class="header__items">
             <li class="header__item">
-              <a href="#news" class="header__link">お知らせ</a>
+              <a href="#news">お知らせ</a>
             </li>
             <li class="header__item">
-              <a href="#content" class="header__link">事業内容</a>
+              <a href="#content">事業内容</a>
             </li>
             <li class="header__item">
-              <a href="#works" class="header__link">制作実績</a>
+              <a href="#works">制作実績</a>
             </li>
             <li class="header__item">
-              <a href="#overview" class="header__link">企業概要</a>
+              <a href="#overview">企業概要</a>
             </li>
             <li class="header__item">
-              <a href="#blog" class="header__link">ブログ</a>
+              <a href="#blog">ブログ</a>
             </li>
-            <li class="header__item">
-              <a href="#contact" class="header__link header__link--contact">お問い合わせ</a>
+            <li class="header__item header__item--contact">
+              <a href="#contact">お問い合わせ</a>
             </li>
           </ul>
         </nav>
@@ -71,25 +71,25 @@
       <div class="drawer-menu js-drawer">
         <ul class="drawer-menu__items">
           <li class="drawer-menu__item">
-            <a href="#" class="drawer-menu__link">トップ</a>
+            <a href="#">トップ</a>
           </li>
           <li class="drawer-menu__item">
-            <a href="#news" class="drawer-menu__link">お知らせ</a>
+            <a href="#news">お知らせ</a>
           </li>
           <li class="drawer-menu__item">
-            <a href="#content" class="drawer-menu__link">事業内容</a>
+            <a href="#content">事業内容</a>
           </li>
           <li class="drawer-menu__item">
-            <a href="#works" class="drawer-menu__link">制作実績</a>
+            <a href="#works">制作実績</a>
           </li>
           <li class="drawer-menu__item">
-            <a href="#overview" class="drawer-menu__link">企業概要</a>
+            <a href="#overview">企業概要</a>
           </li>
           <li class="drawer-menu__item">
-            <a href="#blog" class="drawer-menu__link">ブログ</a>
+            <a href="#blog">ブログ</a>
           </li>
           <li class="drawer-menu__item">
-            <a href="#contact" class="drawer-menu__link">お問い合わせ</a>
+            <a href="#contact">お問い合わせ</a>
           </li>
         </ul>
       </div>
@@ -119,58 +119,70 @@
                 </picture>
               </div>
             </div>
-            <div class="mv__title">
-              <p class="mv__title--large">メインタイトルが入ります</p>
+            <div class="mv__title-wrapper">
+              <p class="mv__title">メインタイトルが入ります</p>
               <p class="mv__title--small">サブタイトルが入ります</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="news">
+      <div class="news top-news">
         <div class="news__inner inner">
           <ul class="news__container">
             <li class="news__item">
               <div class="news__item-label">
                 <time class="news__item-date">2020.07.20</time>
-                <p class="news-item-category"><span>お知らせ</span></p>
+                <p class="news__item-category"><span>お知らせ</span></p>
               </div>
               <p class="news__item-title">
-                <a href="" class="news__item-title--link">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
+                <a href="#">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
               </p>
               <div class="news__button">
-                <a href="" class="news__button--link">すべて見る</a>
+                <a href="#">すべて見る</a>
               </div>
             </li>
           </ul>
         </div>
       </div>
 
-      <section id="content" class="content">
+      <section id="content" class="content top-content">
         <div class="content__inner">
-          <div class="content-title__wrapper">
-            <h2 class="content-title section-title" data-en-content="Content">事業内容</h2>
+          <div class="content__title-wrapper">
+            <h2 class="content__title section-title" data-en-content="Content">事業内容</h2>
           </div>
           <div class="content__container">
             <a href="#" class="content__link">
               <p class="content__link-text">経営理念ページへ</p>
+              <div class="content__link-image">
+                <img src="./images/common/management-philosophy.jpg" alt="手の中で電球に光が灯っている様子" />
+              </div>
             </a>
             <a href="#" class="content__link">
               <p class="content__link-text">理念1へ</p>
+              <div class="content__link-image">
+                <img src="./images/common/philosophy01.jpg" alt="3人がデスクでPCを開きながら談笑している様子" />
+              </div>
             </a>
             <a href="#" class="content__link">
               <p class="content__link-text">理念2へ</p>
+              <div class="content__link-image">
+                <img src="./images/common/philosophy02.jpg" alt="折れ線グラフを近い距離から写した様子" />
+              </div>
             </a>
             <a href="#" class="content__link">
               <p class="content__link-text">理念3へ</p>
+              <div class="content__link-image">
+                <img src="./images/common/philosophy03.jpg" alt="MacbookAirと手に持ったiPhoneのイメージ画像" />
+              </div>
             </a>
           </div>
         </div>
       </section>
 
-      <section id="works" class="works">
-        <div class="works-title__wrapper">
-          <h2 class="works-title section-title" data-en-works="Works">制作実績</h2>
+      <section id="works" class="works top-works">
+        <div class="works__title-wrapper">
+          <h2 class="works__title section-title" data-en-works="Works">制作実績</h2>
         </div>
         <div class="works__box">
           <div class="works__inner inner">
@@ -190,13 +202,13 @@
                   <div class="swiper-pagination"></div>
                 </div>
               </div>
-              <div class="works-content__wrapper">
-                <h3 class="works-content-title main-title">メインタイトルが入ります。</h3>
-                <p class="works-content-text text">
+              <div class="works__content-wrapper">
+                <h3 class="works__content-title main-title">メインタイトルが入ります。</h3>
+                <p class="works__content-text text">
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
-                <div class="works__button button">
-                  <a href="#" class="works__button--link button--link">詳しく見る</a>
+                <div class="works__button">
+                  <a href="#" class="button">詳しく見る</a>
                 </div>
               </div>
             </div>
@@ -204,9 +216,9 @@
         </div>
       </section>
 
-      <section id="overview" class="overview">
-        <div class="overview-title__wrapper">
-          <h2 class="overview-title section-title" data-en-overview="Overview">企業概要</h2>
+      <section id="overview" class="overview top-overview">
+        <div class="overview__title-wrapper">
+          <h2 class="overview__title section-title" data-en-overview="Overview">企業概要</h2>
         </div>
         <div class="overview__box">
           <div class="overview__inner inner">
@@ -214,13 +226,13 @@
               <div class="overview__img-box">
                 <img src="./images/common/overview-img.jpg" alt="オフィスの部屋から通路を映した様子" />
               </div>
-              <div class="overview-content__wrapper">
-                <h3 class="overview-content-title main-title">メインタイトルが入ります。</h3>
-                <p class="overview-content-text text">
+              <div class="overview__content-wrapper">
+                <h3 class="overview__content-title main-title">メインタイトルが入ります。</h3>
+                <p class="overview__content-text text">
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
-                <div class="overview__button button">
-                  <a href="#" class="overview__button--link button--link" data-hover-button="詳しく見る"><div>詳しく見る</div></a>
+                <div class="overview__button">
+                  <a href="#" class="button"><div>詳しく見る</div></a>
                 </div>
               </div>
             </div>
@@ -228,67 +240,67 @@
         </div>
       </section>
 
-      <section id="blog" class="blog">
+      <section id="blog" class="blog top-blog">
         <div class="blog__inner inner">
-          <div class="blog-title__wrapper">
-            <h2 class="blog-title section-title" data-en-blog="Blog">ブログ</h2>
+          <div class="blog__title-wrapper">
+            <h2 class="blog__title section-title" data-en-blog="Blog">ブログ</h2>
           </div>
-          <div class="blog-cards__container">
-            <a href="#" class="blog__badge blog-card card">
-              <div class="blog-card__img card__img">
+          <div class="blog__cards-container">
+            <a href="#" class="blog__badge blog__card card">
+              <div class="blog__card-img card__img">
                 <img src="./images/common/blog-card01.jpg" alt="コードが表示されたPCのイメージ画像" />
               </div>
-              <div class="blog-card__body card__body">
-                <h3 class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
-                <p class="blog-card__body-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                <div class="blog-card__info card__body__info">
-                  <span class="card__body-label--category">カテゴリ</span>
-                  <time class="card__body-label--date" datetime="2021-07-20">2021.07.20</time>
+              <div class="blog__card-body card__body">
+                <h3 class="blog__card-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
+                <p class="blog__card-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                <div class="blog__card-info card__info">
+                  <span class="card__label-category">カテゴリ</span>
+                  <time class="card__label-date" datetime="2021-07-20">2021.07.20</time>
                 </div>
               </div>
             </a>
-            <a href="#" class="blog-card card">
-              <div class="blog-card__img card__img">
+            <a href="#" class="blog__card card">
+              <div class="blog__card-img card__img">
                 <img src="./images/common/blog-card02.jpg" alt="コードが表示されたPCのイメージ画像" />
               </div>
-              <div class="blog-card__body card__body">
-                <h3 class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
-                <p class="blog-card__body-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                <div class="blog-card__info card__body__info">
-                  <span class="card__body-label--category">カテゴリ</span>
-                  <time class="card__body-label--date" datetime="2021-07-20">2021.07.20</time>
+              <div class="blog__card-body card__body">
+                <h3 class="blog__card-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
+                <p class="blog__card-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                <div class="blog__card-info card__info">
+                  <span class="card__label-category">カテゴリ</span>
+                  <time class="card__label-date" datetime="2021-07-20">2021.07.20</time>
                 </div>
               </div>
             </a>
-            <a href="#" class="blog-card card">
-              <div class="blog-card__img card__img">
+            <a href="#" class="blog__card card">
+              <div class="blog__card__img card__img">
                 <img src="./images/common/blog-card03.jpg" alt="コードが表示されたPCのイメージ画像" />
               </div>
-              <div class="blog-card__body card__body">
-                <h3 class="blog-card__body-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
-                <p class="blog-card__body-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                <div class="blog-card__info card__body__info">
-                  <span class="card__body-label--category">カテゴリ</span>
-                  <time class="card__body-label--date" datetime="2021-07-20">2021.07.20</time>
+              <div class="blog__card-body card__body">
+                <h3 class="blog__card-title card__body-title">タイトルが入ります。タイトルが入ります。</h3>
+                <p class="blog__card-text card__body-text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                <div class="blog__card-info card__info">
+                  <span class="card__label-category">カテゴリ</span>
+                  <time class="card__label-date" datetime="2021-07-20">2021.07.20</time>
                 </div>
               </div>
             </a>
           </div>
-          <div class="blog__button button">
-            <a href="#" class="blog__button--link button--link">詳しく見る</a>
+          <div class="blog__button">
+            <a href="#" class="button">詳しく見る</a>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
+      <section id="contact" class="contact top-contact">
         <div class="contact__inner inner">
-          <div class="contact-title__wrapper">
-            <h2 class="contact-title section-title" data-en-contact="Contact">お問い合わせ</h2>
+          <div class="contact__title-wrapper">
+            <h2 class="contact__title section-title" data-en-contact="Contact">お問い合わせ</h2>
           </div>
           <div class="contact__body">
             <div class="contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
-            <div class="contact__button button">
-              <a href="#" class="contact__button--link button--link">お問い合わせへ</a>
+            <div class="contact__button">
+              <a href="#" class="button">お問い合わせへ</a>
             </div>
           </div>
         </div>
@@ -303,22 +315,22 @@
           </div>
           <ul class="footer__nav">
             <li class="footer__menu">
-              <a class="footer__menu--link" href="#news">お知らせ</a>
+              <a href="#news">お知らせ</a>
             </li>
             <li class="footer__menu">
-              <a class="footer__menu--link" href="#works">事業内容</a>
+              <a href="#works">事業内容</a>
             </li>
             <li class="footer__menu">
-              <a class="footer__menu--link" href="#works">制作実績</a>
+              <a href="#works">制作実績</a>
             </li>
             <li class="footer__menu">
-              <a class="footer__menu--link" href="#overview">企業概要</a>
+              <a href="#overview">企業概要</a>
             </li>
             <li class="footer__menu">
-              <a class="footer__menu--link" href="#blog">ブログ</a>
+              <a href="#blog">ブログ</a>
             </li>
             <li class="footer__menu">
-              <a class="footer__menu--link" href="#contact">お問い合わせ</a>
+              <a href="#contact">お問い合わせ</a>
             </li>
           </ul>
         </div>

@@ -3,13 +3,6 @@
 .content {
   position: relative;
   width: 100%;
-  background-color: $black;
-  padding-top: rem(50);
-  padding-bottom: rem(69);
-  @include mq(md) {
-    padding-top: rem(95);
-    padding-bottom: rem(150);
-  }
 }
 .content::before {
   position: absolute;
@@ -29,7 +22,7 @@
 .content__inner {
   width: 100%;
 }
-.content-title__wrapper {
+.content__title-wrapper {
   text-align: center;
   @include mq(md) {
     max-width: calc($inner + rem(50));
@@ -37,13 +30,13 @@
     margin-left: auto;
   }
 }
-.content-title {
+.content__title {
   position: relative;
   @include mq(md) {
     padding-left: rem(10);
   }
 }
-.content-title::before {
+.content__title::before {
   content: attr(data-en-content);
   position: absolute;
   top: rem(-50);
@@ -70,47 +63,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.content__link:first-child {
-  background: url(../images/common/management-philosophy-sp.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  @include mq(md) {
-    background: url(../images/common/management-philosophy.jpg);
-    background-size: cover;
-  }
-}
-.content__link:nth-child(2) {
-  background: url(../images/common/philosophy01-sp.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  @include mq(md) {
-    background: url(../images/common/philosophy01.jpg);
-    background-size: cover;
-  }
-}
-.content__link:nth-child(3) {
-  background: url(../images/common/philosophy02-sp.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  @include mq(md) {
-    background: url(../images/common/philosophy02.jpg);
-    background-size: cover;
-  }
-}
-.content__link:nth-child(4) {
-  background: url(../images/common/philosophy03-sp.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  @include mq(md) {
-    background: url(../images/common/philosophy03.jpg);
-    background-size: cover;
-  }
-}
 .content__link-text {
   font-size: rem(20);
   font-weight: $normal;
@@ -125,6 +77,7 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 40;
   @include mq(md) {
     font-size: rem(25);
     line-height: lh(54, 25);
@@ -133,6 +86,7 @@
 .content__link {
   position: relative;
   aspect-ratio: 188 / 168;
+  z-index: 30;
   @include mq(md) {
     aspect-ratio: 1 / 1;
   }
@@ -146,6 +100,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  z-index: 20;
 }
 .content__link:hover::before {
   position: absolute;
@@ -156,4 +111,18 @@
   transition: all 0.3s ease-in-out;
   width: 100%;
   height: 100%;
+  z-index: 40;
+}
+.content__link-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.content__link-image img {
+  aspect-ratio: 188 / 168;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 1 / 1;
+  }
 }

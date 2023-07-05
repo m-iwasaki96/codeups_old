@@ -44,7 +44,7 @@
 .swiper-slide picture {
   display: block;
 }
-.mv__title {
+.mv__title-wrapper {
   position: absolute;
   z-index: 10;
   width: 100%;
@@ -52,7 +52,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.mv__title--large {
+.mv__title {
   text-align: center;
   font-size: rem(28);
   font-weight: $bold;

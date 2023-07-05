@@ -3,13 +3,8 @@
 .works {
   width: 100%;
   background-color: $black;
-  padding-top: rem(54);
-  padding-bottom: rem(72);
-  @include mq(md) {
-    padding-top: rem(50);
-  }
 }
-.works-title__wrapper {
+.works__title-wrapper {
   @include mq(md) {
     max-width: calc($inner + rem(50));
     margin-right: auto;
@@ -25,15 +20,11 @@
     margin-top: rem(38);
   }
 }
-.works-title {
+.works__title {
   text-align: center;
   position: relative;
-  @include mq(md) {
-    padding-top: rem(4);
-    padding-left: rem(10);
-  }
 }
-.works-title::before {
+.works__title::before {
   content: attr(data-en-works);
   position: absolute;
   top: rem(-50);
@@ -48,7 +39,7 @@
   letter-spacing: rem(2);
   @include mq(md) {
     font-size: rem(110);
-    left: rem(956);
+    left: 83%;
   }
 }
 .works__container {
@@ -93,7 +84,7 @@
   background-color: $yellow2;
 }
 
-.works-content__wrapper {
+.works__content-wrapper {
   width: 100%;
   padding-top: rem(22);
   padding-bottom: rem(20);
@@ -109,7 +100,7 @@
     padding-bottom: 0;
   }
 }
-.works-content-title {
+.works__content-title {
   text-align: center;
   padding-left: rem(20);
   @include mq(md) {
@@ -118,27 +109,15 @@
     margin-top: rem(-10);
   }
 }
-.works-content-text {
+.works__content-text {
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(39);
-    margin-left: rem(2);
   }
 }
 .works__button {
   margin-top: rem(27);
   @include mq(md) {
     margin-top: rem(47);
-  }
-}
-.works__button.button {
-  @include mq(md) {
-    text-align: left;
-  }
-}
-.works__button--link {
-  text-align: center;
-  @include mq(md) {
-    margin-left: rem(3);
   }
 }

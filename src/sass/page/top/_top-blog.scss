@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.top-blog {
+  margin-top: rem(100);
+  @include mq(md) {
+    margin-top: rem(230);
+    padding-left: rem(7);
+  }
+}

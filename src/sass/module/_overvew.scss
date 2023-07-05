@@ -4,11 +4,6 @@
   position: relative;
   width: 100%;
   background-color: $black;
-  padding-top: rem(50);
-  padding-bottom: rem(72);
-  @include mq(md) {
-    padding-top: rem(108);
-  }
 }
 .overview::before {
   position: absolute;
@@ -24,7 +19,7 @@
     top: rem(-65);
   }
 }
-.overview-title__wrapper {
+.overview__title-wrapper {
   @include mq(md) {
     max-width: calc($inner + rem(50));
     margin-right: auto;
@@ -40,16 +35,11 @@
     margin-top: rem(38);
   }
 }
-.overview-title {
+.overview__title {
   text-align: center;
   position: relative;
-  margin-top: rem(-1);
-  @include mq(md) {
-    margin-top: rem(26);
-    margin-left: rem(10);
-  }
 }
-.overview-title::before {
+.overview__title::before {
   content: attr(data-en-overview);
   position: absolute;
   top: rem(-50);
@@ -91,7 +81,7 @@
     aspect-ratio: 557 / 389;
   }
 }
-.overview-content__wrapper {
+.overview__content-wrapper {
   width: 100%;
   padding-top: rem(24);
   padding-bottom: rem(20);
@@ -101,12 +91,12 @@
   @include mq(md) {
     padding-top: rem(28);
     padding-right: 0;
-    padding-left: rem(4);
+    padding-left: 0;
     padding-bottom: 0;
     width: 46.3%;
   }
 }
-.overview-content-title {
+.overview__content-title {
   text-align: center;
   padding-left: rem(16);
   @include mq(md) {
@@ -114,7 +104,7 @@
     padding-left: 0;
   }
 }
-.overview-content-text {
+.overview__content-text {
   margin-top: rem(23);
   @include mq(md) {
     margin-top: rem(39);
@@ -124,16 +114,5 @@
   margin-top: rem(26);
   @include mq(md) {
     margin-top: rem(46);
-  }
-}
-.overview__button.button {
-  @include mq(md) {
-    text-align: left;
-  }
-}
-.overview__button--link {
-  text-align: center;
-  @include mq(md) {
-    margin-left: 0;
   }
 }

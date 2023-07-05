@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.section-title {
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: lh(29, 20);
+  letter-spacing: rem(2);
+  color: $white;
+  @include mq(md) {
+    font-size: rem(30);
+    line-height: lh(35, 30);
+  }
+}
+.section-title--back {
+  font-family: $second-font-family;
+  font-size: rem(50);
+  font-weight: $normal;
+  line-height: lh(72, 50);
+  letter-spacing: rem(2);
+  color: $yellow;
+  opacity: 0.2;
+  text-transform: capitalize;
+  @include mq(md) {
+    font-size: rem(110);
+    line-height: lh(158, 110);
+  }
+}
